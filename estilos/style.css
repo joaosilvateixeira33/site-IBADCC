@@ -351,6 +351,7 @@ section .principal {
     height: 100%;
     display: flex;
     gap: 60px;
+    margin-bottom: 20px;
 }
 
 .txt-sobre {
