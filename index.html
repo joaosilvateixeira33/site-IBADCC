@@ -1,104 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | IBADCC</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <script src="https://kit.fontawesome.com/1e77cd7beb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title> Home | IBADCC</title>
+    <link rel="stylesheet" href="/estilos/style.css">
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
+    <script src="codigos/script.js" defer></script>
 </head>
-
 <body>
-    <header class="header">
-        <img class="header-logo" src="imagens/logo.png">
-        <nav class="header-nav">
-            <a href="#investimento" class="header-nav-link">Cursos</a>
-            <a href="#sobre" class="header-nav-link">Sobre</a>
-            <a href="#contatos" class="header-nav-link">Contatos</a>
-            <div class="botoes-login">
-                <button><i class="fa-solid fa-user"> Área do Aluno</i></button>
+    <div class="lista-cursos">
+        <ul class="nav-topo">
+            <li><a href="#"><i class="bi bi-person-workspace"></i> Basico em teologia</a></li>
+            <li><a href="#"><i class="bi bi-book-fill"></i> Médio em teologia</a></li>
+            <li><a href="#"><i class="bi bi-person-video"></i> Pleno em teologia</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logo.png" alt="logo-site"></a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Investimento</a></li>
+                  <li><a href="#">Cursos</a>
+                     <ul>
+                          <li><a href="#">Básico</a></li>
+                          <li><a href="#">Médio</a></li>
+                          <li><a href="#">Pleno</a></li>
+                       </ul>
+                </li>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">Contato</a></li>
+            <div class="btn-aluno">
+                <button><i class="bi bi-person-circle"> Área do aluno</i></button>
             </div>
-        </nav>
+        </ul>
     </header>
     <main>
-        <div class="container-main">
-            <section>
-                <img src="imagens/teologia.png" alt="imagem-ilustrativa" id="fundo">
-                <div class="descricao-imagem">
-                    <h1>Formação Plena em Teologia EAD</h1>
-                    <p>Antigo Bacharel Livre em Teologia</p>
-                    <button><a href="#">EU QUERO INICIAR AGORA !</a></button>
+        <section class="content principal" id="principal">
+            <img src="imagens/teologia.png" alt="imagem-ilustrativa">
+            <div class="conteudo-topo">
+                <h2>NÓS <span class="animacao"></span></h2>
+                <h2>Seus estudos</h2>
+                <p>Há mais de 2 anos atuamos na formação de líderes e obreiros de diferentes vertentes protestantes.</p>
+                <p>Estude em um dos melhores seminários de teologia do país! Clique nos links abaixo e saiba mais.</p>
+                <div class="btn-agora">
+                    <button>Matricular-se agora!!</button>
                 </div>
-            </section>
-            <section>
-                <div class="container-investimento" id="investimento">
-                    <h1>Investimento</h1>
-                    <div class="curso curso-basico">
-                        <h3>TEOLOGIA EAD BÁSICA</h3>
-                        <div class="descricao">
-                            <p><i class="fa-solid fa-check"></i> Carga Horária: 720 </p>
-                            <p><i class="fa-solid fa-check"></i> 12 Módulos</p>
-                            <p><i class="fa-solid fa-check"></i> 154 aulas completas
-                            <p><i class="fa-solid fa-check"></i> PDF das aulas disponível</p>
-                            <p><i class="fa-solid fa-check"></i> 1 Certificação GRÁTIS</p>
-                            <p><i class="fa-solid fa-check"></i> Curso 100% online, estude quando e de onde estiver</p>
-                            <p><i class="fa-solid fa-check"></i> Portal do aluno exclusivo</p>
-                            <div class="valor">
-                                <img src="imagens/money-bag.png" alt="valor-ilustrativo">
-                                <h2>R$ 29,90</h2>
+            </div>
+        </section>
+        <section>
+            <div class="content cursos-lista" id="cursosLista">
+                <div class="txt-cursos">
+                    <h2>Confira todos os <span id="destaque">Cursos</span></h2>
+                    <p>Confira a disponibilidade de nossos cursos para aprimoramento do seu ministério! Contamos com diversos cursos em nossa plataforma, além de oferecermos suporte para ensino EaD e corpo docente qualificado.</p>
+                </div>
+                <div class="lista">
+                    <div class="container-list">
+                        <div class="item div-format" id="div1">
+                            <img src="imagens/div-1.jpg" alt="img-ilustrativa">
+                            <div class="txt-descricao">
+                                <h3>Basico em Teologia</h3>
+                                <p>Aprenda mais sobre a palavra de Deus, e conheça a teologia desenvolvida pelo Apostolo Paulo.</p>
+                                <button>Veja Mais</button>
                             </div>
-                            <button><a href="#">COMPRAR AGORA</a></button>
                         </div>
-                    </div>
-                    <div class="curso curso-medio">
-                        <h3>TEOLOGIA EAD MÉDIO</h3>
-                        <div class="descricao">
-                            <p><i class="fa-solid fa-check"></i> Carga Horária: 1320 </p>
-                            <p><i class="fa-solid fa-check"></i> 22 Módulos</p>
-                            <p><i class="fa-solid fa-check"></i> 266 aulas completas
-                            <p><i class="fa-solid fa-check"></i> PDF das aulas disponível</p>
-                            <p><i class="fa-solid fa-check"></i> 2 Certificação GRÁTIS</p>
-                            <p><i class="fa-solid fa-check"></i> Curso 100% online, estude quando e de onde estiver</p>
-                            <p><i class="fa-solid fa-check"></i> Portal do aluno exclusivo</p>
-                            <div class="valor">
-                                <img src="imagens/money-bag.png" alt="valor-ilustrativo">
-                                <h2>R$ 39,90</h2>
+                        <div class="item div-format" id="div2">
+                             <img src="imagens/div-2.jpg" alt="img-ilustrativa">
+                            <div class="txt-descricao">
+                                <h3>Médio em Teologia</h3>
+                                <p>Aprenda mais sobre a palavra de Deus, e conheça a teologia desenvolvida pelo Apostolo Paulo.</p>
+                                <button>Veja Mais</button>
                             </div>
-                            <button><a href="#">COMPRAR AGORA</a></button>
                         </div>
-                    </div>
-                    <div class="curso curso-pleno">
-                        <h3>TEOLOGIA EAD PLENO</h3>
-                        <div class="descricao">
-                            <p><i class="fa-solid fa-check"></i> Carga Horária: 2040 </p>
-                            <p><i class="fa-solid fa-check"></i> 34 Módulos</p>
-                            <p><i class="fa-solid fa-check"></i> 431 aulas completas
-                            <p><i class="fa-solid fa-check"></i> PDF das aulas disponível</p>
-                            <p><i class="fa-solid fa-check"></i> 3 Certificação GRÁTIS</p>
-                            <p><i class="fa-solid fa-check"></i> Curso 100% online, estude quando e de onde estiver</p>
-                            <p><i class="fa-solid fa-check"></i> Portal do aluno exclusivo</p>
-                            <div class="valor">
-                                <img src="imagens/money-bag.png" alt="valor-ilustrativo">
-                                <h2>R$ 49,90</h2>
+                        <div class="item div-format">
+                            <img src="imagens/div-3.jpg" alt="img-ilustrativa">
+                            <div class="txt-descricao">
+                                <h3>Pleno em Teologia</h3>
+                                <p>Aprenda mais sobre a palavra de Deus, e conheça a teologia desenvolvida pelo Apostolo Paulo.</p>
+                                <button>Veja Mais</button>
                             </div>
-                            <button><a href="#">COMPRAR AGORA</a></button>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section>
-                <div class="container-sobre" id="sobre">
-                    <h1>Sobre a Formação Plena em Teologia EAD</h1>
-                    <p>
-                        O Curso de Formação em Teologia Plena (Antigo Curso Livre de Bacharel em Teologia) é realizado em nosso Portal do Aluno.<br>
-                        São 3 Cursos em 1: Teologia Básica + Teologia Sistemática + Teologia Avançada.<br>
-                        Através deste Curso de Teologia EAD, o aluno obterá conhecimentos teóricos e práticos de Nível Avançado na estruturação do saber Bíblico em diversas áreas do conhecimento teológico.
-                    </p>
+            </div>
+            <div class="especialidades">
+                <div class="txt-especialidades">
+                    <h2>Especialidades</h2>
+                    <p>O IBADCC possui uma grade curricular concentrada nas seguintes áreas: Teologia Bíblica, Teologia Sistemática, Teologia Prática, Ciências Humanas, Línguas Bíblicas, Educação Cristã, História e Missões.</p>
                 </div>
-            </section>
-        </div>
+                <div class="cards-especialiadades">
+                    <div class="card">
+                        <div class="icone"><i class="bi bi-person-video"></i></div>
+                        <div class="txt-info-card">
+                            <h3>Tecnologia de Ensino</h3>
+                            <p>Contamos com uma plataforma exclusiva para nossos cursos EaD que facilitam o contato do aluno com o tutor, além da participação em fóruns e materiais de apoio. </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icone"><i class="bi bi-person-video3"></i></div>
+                        <div class="txt-info-card">
+                            <h3>Professores Qualificados </h3>
+                            <p>Nosso corpo docente é composto por professores com título de Mestres e Doutores, além de possuírem didática que visa não apenas a absorção do conhecimento, mas também a edificação da fé. </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icone"><i class="bi bi-person-vcard-fill"></i></div>
+                        <div class="txt-info-card">
+                            <h3> Foco na Especialização </h3>
+                            <p>Acreditamos na continuidade do ensino, por isso, oferecemos cursos de especialização e formação continuada, além do ensino técnico, médio e graduação.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icone"><i class="bi bi-book-fill"></i></div>
+                        <div class="txt-info-card">
+                            <h3>Multidisciplinar</h3>
+                            <p>Para a compreensão completa da teologia, disponibilizamos em nossa grade curricular, disciplinas além da teoria, passando por linguagens, ciências sociais e história. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sobre-nos">
+                <div class="txt-sobre">
+                    <h2>Sobre nós</h2>
+                    <p>A história do IBADCC começa em Cosmos em 2023. A Igreja Assembléia de Deus Central de Cosmos, representada pelo seu Pastor Presidente Marcos Silverio Teixeira, percebendo a necessidade de formar seus líderes, propõe a criação do seminário. A ideia é concretizada e surge a primeira casa de profetas para servir às igrejas na preparação teológica de seus obreiros. Juntamente com esses fundadores, se destaca a Professora Kaylla Araujo que ingressou na direção pedagógica da instituição posteriormente.</p>
+                    <button>Saiba mais</button>
+                </div>
+                <div class="img-sobre">
+                    <img src="imagens/sobre-img.jpg" alt="sobre-img">
+                </div>
+            </div>
+            <div class="rodape-topo">
+                <div class="contatos">
+                    <div class="form">
+                        <h2>Fale conosco</h2>
+                        <form action="">
+                            <div class="input-container">
+                                <i class="bi bi-person-circle icon"></i>
+                                <input type="text" name="nome" id="nome" placeholder=" nome completo.." required>
+                            </div>
+                            <div class="input-container">
+                                <i class="bi bi-envelope-fill icon"></i>
+                                <input type="email" name="e-mail" id="e-mail" placeholder=" Seu email.." required>
+                            </div>
+                            <div class="input-container">
+                                <i class="bi bi-whatsapp icon"></i>
+                                <input type="tel" name="telefone" id="telefone" placeholder=" Seu celular">
+                            </div>
+                            <div class="input-container">
+                                <i class="bi bi-chat-left-fill icon"></i>
+                                <textarea name="mensagem" id="mensagem" placeholder=" Sua mensagem" required></textarea>
+                            </div>
+                            <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                        </form>
+                    </div>
+                    <div class="redes-sociais">
+                        <h2>Nossos endereços</h2>
+                        <div class="enderecos">
+                            <p><i class="bi bi-instagram"></i> ibadcc</p>
+                            <p><i class="bi bi-whatsapp"></i> +5521970224649</p>
+                            <p><i class="bi bi-envelope-fill"></i> contato.ibadcc@gmail.com</p>
+                            <p><i class="bi bi-telephone-fill"></i> 2124098692</p>
+                            <p> <i class="bi bi-geo-alt-fill"></i> Rua E, Lote01, Quadra09, Cosmos - RJ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="rodape">
+            <p>Copyright © 2023 Instituto Biblico Assembléia de Deus Central de Cosmos - IBADCC</p>
+            <p>Site desenvolvido por Agência JS Digital</p>
+        </div>
+    </footer>
 </body>
-
 </html>
