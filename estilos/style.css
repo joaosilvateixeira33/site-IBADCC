@@ -130,8 +130,12 @@ nav .nav li:hover {
     cursor: pointer;
 }
 
+/* Estilo paginas escondidas */
+.curso-descricao {
+    display: none;
+}
 /* Estilo Topo da pagina */
-section .principal {
+.content .principal {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -411,7 +415,7 @@ section .principal {
     margin-left: 100px;
 }
 
-.form{
+.form {
     margin-left: 300px;
 }
 
@@ -432,7 +436,7 @@ form {
     text-align: center;
 }
 
-.input-container input{
+.input-container input {
     width: 500px;
 }
 
@@ -454,11 +458,11 @@ form {
     border: 2px solid dodgerblue;
 }
 
-form textarea{
+form textarea {
     width: 50%;
 }
 
-.btn-enviar input{
+.btn-enviar input {
     padding: 10px;
     margin-left: 200px;
     width: 200px;
@@ -472,7 +476,7 @@ form textarea{
     cursor: pointer;
 }
 
-.redes-sociais{
+.redes-sociais {
     margin-top: 10px;
     color: #fff;
     border-left: 2px solid#fff;
@@ -480,27 +484,27 @@ form textarea{
     margin-left: 200px;
 }
 
-.redes-sociais h2{
+.redes-sociais h2 {
     font-size: 40px;
 }
 
-.enderecos{
+.enderecos {
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-top: 30px;
 }
 
-.enderecos p{
+.enderecos p {
     font-size: 20px;
 }
 
-footer{
+footer {
     background-color: dodgerblue;
     color: #fff;
 }
 
-.rodape{
+.rodape {
     display: flex;
     gap: 40px;
     padding: 10px;

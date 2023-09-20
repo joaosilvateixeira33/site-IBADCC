@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,54 +10,72 @@
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
     <script src="codigos/script.js" defer></script>
 </head>
+
 <body>
     <div class="lista-cursos">
         <ul class="nav-topo">
-            <li><a href="#"><i class="bi bi-person-workspace"></i> Basico em teologia</a></li>
-            <li><a href="#"><i class="bi bi-book-fill"></i> Médio em teologia</a></li>
-            <li><a href="#"><i class="bi bi-person-video"></i> Pleno em teologia</a></li>
+            <li><a href="#" id="basico-link" onclick="showContent('basico')"><i class="bi bi-person-workspace"></i> Basico em teologia</a></li>
+            <li><a href="#" id="medio-link" onclick="showContent('medio')"><i class="bi bi-book-fill"></i> Médio em teologia</a></li>
+            <li><a href="#" id="pleno-link" onclick="showContent('pleno')"><i class="bi bi-person-video"></i> Pleno em teologia</a></li>
         </ul>
     </div>
 
     <header>
         <div class="logo">
-            <a href="index.html"><img src="../site-IBADCC/imagens/logo.png" alt="logo-site"></a>
+            <a href="index.html"><img src="imagens/logo.png" alt="logo-site"></a>
         </div>
         <ul class="menu">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Investimento</a></li>
-                  <li><a href="#">Cursos</a>
-                     <ul>
-                          <li><a href="#">Básico</a></li>
-                          <li><a href="#">Médio</a></li>
-                          <li><a href="#">Pleno</a></li>
-                       </ul>
-                </li>
-            <li><a href="#">Links</a></li>
+            <li><a href="#">Cursos</a>
+                <ul>
+                    <li><a href="#">Básico</a></li>
+                    <li><a href="#">Médio</a></li>
+                    <li><a href="#">Pleno</a></li>
+                </ul>
+            </li>
             <li><a href="#">Contato</a></li>
             <div class="btn-aluno">
                 <button><i class="bi bi-person-circle"> Área do aluno</i></button>
             </div>
         </ul>
     </header>
+
+    
+
+    <div id="medio-descricao" class="curso-descricao medio">
+        <h3>Curso Médio</h3>
+    </div>
+
+    <div id="pleno-descricao" class="curso-descricao pleno">
+        <h3>Curso Pleno</h3>
+    </div>
+   
     <main>
-        <section class="content principal" id="principal">
-            <img src="imagens/teologia.png" alt="imagem-ilustrativa">
-            <div class="conteudo-topo">
-                <h2>NÓS <span class="animacao"></span></h2>
-                <h2>Seus estudos</h2>
-                <p>Há mais de 2 anos atuamos na formação de líderes e obreiros de diferentes vertentes protestantes.</p>
-                <p>Estude em um dos melhores seminários de teologia do país! Clique nos links abaixo e saiba mais.</p>
-                <div class="btn-agora">
-                    <button>Matricular-se agora!!</button>
+        <div id="curso-basico-content" class="curso-descricao basico">
+            <object data="curso-basico.html" width="100%" height="900px">
+                Seu navegador não suporta a exibição deste arquivo.
+            </object>
+        </div>
+        <section class="secao-atual">
+            <div class="content principal">
+                <img src="imagens/teologia.png" alt="imagem-ilustrativa">
+                <div class="conteudo-topo">
+                    <h2>NÓS <span class="animacao"></span></h2>
+                    <h2>Seus estudos</h2>
+                    <p>Há mais de 2 anos atuamos na formação de líderes e obreiros de diferentes vertentes protestantes.</p>
+                    <p>Estude em um dos melhores seminários de teologia do país! Clique nos links abaixo e saiba mais.</p>
+                    <div class="btn-agora">
+                        <button>Matricular-se agora!!</button>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section>
             <div class="content cursos-lista" id="cursosLista">
                 <div class="txt-cursos">
                     <h2>Confira todos os <span id="destaque">Cursos</span></h2>
-                    <p>Confira a disponibilidade de nossos cursos para aprimoramento do seu ministério! Contamos com diversos cursos em nossa plataforma, além de oferecermos suporte para ensino EaD e corpo docente qualificado.</p>
+                    <p>Confira a disponibilidade de nossos cursos para aprimoramento do seu ministério! Contamos com
+                        diversos cursos em nossa plataforma, além de oferecermos suporte para ensino EaD e corpo docente
+                        qualificado.</p>
                 </div>
                 <div class="lista">
                     <div class="container-list">
@@ -64,15 +83,17 @@
                             <img src="imagens/div-1.jpg" alt="img-ilustrativa">
                             <div class="txt-descricao">
                                 <h3>Basico em Teologia</h3>
-                                <p>Aprenda mais sobre a palavra de Deus, e conheça a teologia desenvolvida pelo Apostolo Paulo.</p>
+                                <p>Aprenda mais sobre a palavra de Deus, e conheça a teologia desenvolvida pelo Apostolo
+                                    Paulo.</p>
                                 <button>Veja Mais</button>
                             </div>
                         </div>
                         <div class="item div-format" id="div2">
-                             <img src="imagens/div-2.jpg" alt="img-ilustrativa">
+                            <img src="imagens/div-2.jpg" alt="img-ilustrativa">
                             <div class="txt-descricao">
                                 <h3>Médio em Teologia</h3>
-                                <p>Aprenda mais sobre a palavra de Deus, e conheça a teologia desenvolvida pelo Apostolo Paulo.</p>
+                                <p>Aprenda mais sobre a palavra de Deus, e conheça a teologia desenvolvida pelo Apostolo
+                                    Paulo.</p>
                                 <button>Veja Mais</button>
                             </div>
                         </div>
@@ -80,45 +101,53 @@
                             <img src="imagens/div-3.jpg" alt="img-ilustrativa">
                             <div class="txt-descricao">
                                 <h3>Pleno em Teologia</h3>
-                                <p>Aprenda mais sobre a palavra de Deus, e conheça a teologia desenvolvida pelo Apostolo Paulo.</p>
+                                <p>Aprenda mais sobre a palavra de Deus, e conheça a teologia desenvolvida pelo Apostolo
+                                    Paulo.</p>
                                 <button>Veja Mais</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="especialidades">
-                <div class="txt-especialidades">
-                    <h2>Especialidades</h2>
-                    <p>O IBADCC possui uma grade curricular concentrada nas seguintes áreas: Teologia Bíblica, Teologia Sistemática, Teologia Prática, Ciências Humanas, Línguas Bíblicas, Educação Cristã, História e Missões.</p>
-                </div>
-                <div class="cards-especialiadades">
-                    <div class="card">
-                        <div class="icone"><i class="bi bi-person-video"></i></div>
-                        <div class="txt-info-card">
-                            <h3>Tecnologia de Ensino</h3>
-                            <p>Contamos com uma plataforma exclusiva para nossos cursos EaD que facilitam o contato do aluno com o tutor, além da participação em fóruns e materiais de apoio. </p>
-                        </div>
+                <div class="especialidades">
+                    <div class="txt-especialidades">
+                        <h2>Especialidades</h2>
+                        <p>O IBADCC possui uma grade curricular concentrada nas seguintes áreas: Teologia Bíblica, Teologia
+                            Sistemática, Teologia Prática, Ciências Humanas, Línguas Bíblicas, Educação Cristã, História e
+                            Missões.</p>
                     </div>
-                    <div class="card">
-                        <div class="icone"><i class="bi bi-person-video3"></i></div>
-                        <div class="txt-info-card">
-                            <h3>Professores Qualificados </h3>
-                            <p>Nosso corpo docente é composto por professores com título de Mestres e Doutores, além de possuírem didática que visa não apenas a absorção do conhecimento, mas também a edificação da fé. </p>
+                    <div class="cards-especialiadades">
+                        <div class="card">
+                            <div class="icone"><i class="bi bi-person-video"></i></div>
+                            <div class="txt-info-card">
+                                <h3>Tecnologia de Ensino</h3>
+                                <p>Contamos com uma plataforma exclusiva para nossos cursos EaD que facilitam o contato do
+                                    aluno com o tutor, além da participação em fóruns e materiais de apoio. </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="icone"><i class="bi bi-person-vcard-fill"></i></div>
-                        <div class="txt-info-card">
-                            <h3> Foco na Especialização </h3>
-                            <p>Acreditamos na continuidade do ensino, por isso, oferecemos cursos de especialização e formação continuada, além do ensino técnico, médio e graduação.</p>
+                        <div class="card">
+                            <div class="icone"><i class="bi bi-person-video3"></i></div>
+                            <div class="txt-info-card">
+                                <h3>Professores Qualificados </h3>
+                                <p>Nosso corpo docente é composto por professores com título de Mestres e Doutores, além de
+                                    possuírem didática que visa não apenas a absorção do conhecimento, mas também a
+                                    edificação da fé. </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="icone"><i class="bi bi-book-fill"></i></div>
-                        <div class="txt-info-card">
-                            <h3>Multidisciplinar</h3>
-                            <p>Para a compreensão completa da teologia, disponibilizamos em nossa grade curricular, disciplinas além da teoria, passando por linguagens, ciências sociais e história. </p>
+                        <div class="card">
+                            <div class="icone"><i class="bi bi-person-vcard-fill"></i></div>
+                            <div class="txt-info-card">
+                                <h3> Foco na Especialização </h3>
+                                <p>Acreditamos na continuidade do ensino, por isso, oferecemos cursos de especialização e
+                                    formação continuada, além do ensino técnico, médio e graduação.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="icone"><i class="bi bi-book-fill"></i></div>
+                            <div class="txt-info-card">
+                                <h3>Multidisciplinar</h3>
+                                <p>Para a compreensão completa da teologia, disponibilizamos em nossa grade curricular,
+                                    disciplinas além da teoria, passando por linguagens, ciências sociais e história. </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,7 +155,12 @@
             <div class="sobre-nos">
                 <div class="txt-sobre">
                     <h2>Sobre nós</h2>
-                    <p>A história do IBADCC começa em Cosmos em 2023. A Igreja Assembléia de Deus Central de Cosmos, representada pelo seu Pastor Presidente Marcos Silverio Teixeira, percebendo a necessidade de formar seus líderes, propõe a criação do seminário. A ideia é concretizada e surge a primeira casa de profetas para servir às igrejas na preparação teológica de seus obreiros. Juntamente com esses fundadores, se destaca a Professora Kaylla Araujo que ingressou na direção pedagógica da instituição posteriormente.</p>
+                    <p>A história do IBADCC começa em Cosmos em 2023. A Igreja Assembléia de Deus Central de Cosmos,
+                        representada pelo seu Pastor Presidente Marcos Silverio Teixeira, percebendo a necessidade de
+                        formar seus líderes, propõe a criação do seminário. A ideia é concretizada e surge a primeira
+                        casa de profetas para servir às igrejas na preparação teológica de seus obreiros. Juntamente com
+                        esses fundadores, se destaca a Professora Kaylla Araujo que ingressou na direção pedagógica da
+                        instituição posteriormente.</p>
                     <button>Saiba mais</button>
                 </div>
                 <div class="img-sobre">
@@ -171,6 +205,7 @@
             </div>
         </section>
     </main>
+    
     <footer>
         <div class="rodape">
             <p>Copyright © 2023 Instituto Biblico Assembléia de Deus Central de Cosmos - IBADCC</p>
@@ -178,4 +213,5 @@
         </div>
     </footer>
 </body>
+
 </html>
